@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input 
+        type="text"
+         placeholder="Enter your name",
+         id = "Inputname"
+         value="">
+    </form>
+
+    <p id="outPut"></p>
+     <select id="city"> 
+  <option value="">Select City</option> 
+  <option value="Delhi">Delhi</option> 
+  <option value="Mumbai">Mumbai</option> 
+  <option value="Bangalore">Bangalore</option> 
+   </select>
+   <p id="result"></p>
+</body>
+<script>
+
+    //select
+       let city = docuent.getElementById("city")
+       let result = docuent.getElementById("result")
+       cit.addEventListener("change",()=>{
+        result.innerText = "City Name"+ city.value
+       })
+       
+
+    //input
+    let InputName = document.getElementById("Inputname")
+    let outPut = document.getElementById("outPut")
+    let citySelect = document.getElementById("city")
+
+    InputName.addEventListener("input", (InputName)=> {
+       // let name = 
+        outPut.innerText = "Welcome to my website " + InputName.target.value
+    })
+
+    citySelect.addEventListener("change", (citySelect)=> {
+        outPut.innerText += " You live in " + citySelect.target.value
+    })
+</script>
+</html>

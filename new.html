@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+</head>
+<div id="countainer"></div>
+<body>
+
+<script>
+    // Create card
+    let card = document.createElement("div");
+    let Countainer = document.getElementById("countainer");
+
+    card.style.width = "300px";
+    card.style.height = "200px";
+    card.style.backgroundColor = "skyblue";
+    card.style.borderRadius = "10px";
+    card.style.padding = "20px";
+
+    // Create heading
+    let heading = document.createElement("h1");
+    heading.innerText = "JavaScript";
+
+    // Create paragraph
+    let paragraph = document.createElement("p");
+    paragraph.innerText = "JavaScript is a programming language that is used to make web pages interactive.";
+
+    let link = document.createElement("a");
+    link.innerText = "Learn more";
+
+    //set Attribute
+    link.setAttribute("href","./DOM/login.html")
+
+    // Add heading and paragraph inside card
+    card.appendChild(heading);
+    card.appendChild(paragraph);
+    card.appendChild(link);
+
+    // Add card to body
+    Countainer.appendChild(card);
+   // document.body.appendChild(card);
+</script>
+
+</body>
+</html>
+     

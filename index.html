@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item"></p>
+
+    <p class="info"></p>
+    <p class="info"></p>
+    <p class="info"></p>
+
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <li></li>
+    </ol>
+    
+</body>
+<script>
+    //get element by tag name
+    let tagItem = document.getElementsByTagName("ul")
+    console.log(tagItem)
+
+
+    //get element by class
+
+    let classItem = document.getElementsByClassName("info")
+    console.log(classItem)
+
+    classItem[0].innerText = "Item-1"
+    classItem[1].innerText = "Item-2"
+    classItem[2].innerText = "Item-3"
+    classItem[2].style.color = "red"
+
+
+   //ge element by id
+   document.getElementById("item").innerText = "welcome my website"
+    document.getElementById("item").style.color = "red"
+    document.getElementById("item").style.backgroundColor = "yellow"
+
+    let IDPara = document.getElementById("item")
+    //IDPara.innerText = "welcome my website"
+    //IDPara.style.color = "red"
+
+    //console.log(item)
+</script>
+</html>
